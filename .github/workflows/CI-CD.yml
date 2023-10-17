@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-[![CI-CD](https://github.com/oyinlola101/codio_c/actions/workflows/CI-CD.yml/badge.svg)](https://github.com/oyinlola101/codio_c/actions/workflows/CI-CD.yml)
+
 name: CI-CD
 
 # Controls when the workflow will run
@@ -29,6 +29,8 @@ jobs:
         run:  npx yarn
       - name:  Build
         run:  npx yarn build
+      - name: run tests
+        run:  jest
 
       # Runs a set of commands using the runners shell
       - name: Upload artifact
