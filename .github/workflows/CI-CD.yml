@@ -26,9 +26,9 @@ jobs:
 
       # Runs a build command and downloads the dependencies
       - name: Install dependencies
-        run:  npx yarn
+        run:  npm yarn
       - name:  Build
-        run:  npx yarn build
+        run:  npm yarn build
       - name: run tests
         run:  jest
 
