@@ -18,4 +18,4 @@ jobs:                                       # create job called "test" to perfor
       with:
         path: dist
     - name: Run Tests                       # run Unit Tests using Jest
-      run: npx yarn test
+      run: npm yarn test
